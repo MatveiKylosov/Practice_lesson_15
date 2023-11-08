@@ -23,13 +23,11 @@ namespace TimeLord_Кылосов.Pages
     {
         public DispatcherTimer dispatcherTimer = new DispatcherTimer();
         public float full_second = 0;
-        public bool start_stopwatch = false;
         public int crug = 0;
         public Stopwatch()
         {
             InitializeComponent();
 
-            dispatcherTimer.Tick += TimerSecond; 
             dispatcherTimer.Interval = new TimeSpan(0, 0, 1);
         }
 
@@ -52,21 +50,23 @@ namespace TimeLord_Кылосов.Pages
 
             time.Content = s_hours + ":" + s_minuts + ":" + s_seconds;
         }
+
         private void StartStopwatch(object sender, RoutedEventArgs e)
         {
-            if(start_stopwatch == false)
+            if (start.Content.ToString() == "Начать" & !(BTT.Content.ToString() == "Таймер стоп"))
             {
+                dispatcherTimer.Tick += TimerSecond;
                 CheckView.Items.Clear();
                 crug = 0;
                 full_second = 0;
                 dispatcherTimer.Start();
-                start_stopwatch = true;
+
                 start.Content = "Стоп";
             }
-            else
+            else if(start.Content.ToString() == "Стоп")
             {
+                dispatcherTimer.Tick -= TimerSecond;
                 dispatcherTimer.Stop();
-                start_stopwatch = false;
                 start.Content = "Начать";
             }
         }
@@ -75,6 +75,43 @@ namespace TimeLord_Кылосов.Pages
         {
             crug++;
             CheckView.Items.Add($"Круг - {crug}, время {time.Content}");
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            if(int.TryParse(TimerTime.Text, out int time) & !(start.Content.ToString() == "Стоп"))
+            {
+                full_second = time;
+                dispatcherTimer.Tick += TimerSecond2;
+                dispatcherTimer.Start();
+
+                BTT.Content = "Таймер стоп";
+            }
+            else if(BTT.Content.ToString() == "Таймер стоп")
+            {
+                dispatcherTimer.Tick -= TimerSecond2;
+            }
+        }
+
+        private void TimerSecond2(object sender, EventArgs e)
+        {
+            full_second--;
+
+            float hours = (int)(full_second / 60 / 60);
+            float minuts = (int)(full_second / 60) - (hours * 60);
+            float seconds = full_second - (hours * 60 * 60) - (minuts * 60);
+
+            string s_seconds = seconds.ToString();
+            if (seconds < 0) s_seconds = "0" + seconds;
+
+            string s_minuts = minuts.ToString();
+            if (minuts < 0) s_minuts = "0" + minuts;
+
+            string s_hours = hours.ToString();
+            if (hours < 0) s_hours = "0" + hours;
+
+            time.Content = s_hours + ":" + s_minuts + ":" + s_seconds;
+            if(s_hours + ":" + s_minuts + ":" + s_seconds == "0:0:0") dispatcherTimer.Stop();
         }
     }
 }

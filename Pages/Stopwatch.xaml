@@ -14,6 +14,10 @@
         <Button x:Name="start" Click="StartStopwatch" Content="Начать" HorizontalAlignment="Center"
                 VerticalAlignment="Center" Margin="280, 312, 402.4, 72.6" Width="100" Height="25" Background="White" Foreground="#FFE8E100"/>
         <Button Content="Интервал" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="410, 312, 272, 72.6" Width="100" Height="25" Background="White" Foreground="#ffe8e100" Click="Button_Click"/>
+
+        <Button x:Name="BTT" Content="Секундный таймер" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="280,372,0,0" Width="111" Height="25" Background="White" Foreground="#ffe8e100" Click="Button_Click_1"/>
+        <TextBox x:Name="TimerTime" Margin="410,372,0,0" Height="25" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" />
+
         <ListView x:Name="CheckView" Margin="0,10,0,10" HorizontalAlignment="Left" Width="204"/>
     </Grid>
 </Page>
