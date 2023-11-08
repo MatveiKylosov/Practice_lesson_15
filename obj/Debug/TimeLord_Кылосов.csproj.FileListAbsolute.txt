@@ -1,0 +1,17 @@
+C:\Users\matve\Desktop\Учеба\МДК 01.01\TimeLord_Кылосов\bin\Debug\TimeLord_Кылосов.exe.config
+C:\Users\matve\Desktop\Учеба\МДК 01.01\TimeLord_Кылосов\bin\Debug\TimeLord_Кылосов.exe
+C:\Users\matve\Desktop\Учеба\МДК 01.01\TimeLord_Кылосов\bin\Debug\TimeLord_Кылосов.pdb
+C:\Users\matve\Desktop\Учеба\МДК 01.01\TimeLord_Кылосов\obj\Debug\TimeLord_Кылосов.csproj.AssemblyReference.cache
+C:\Users\matve\Desktop\Учеба\МДК 01.01\TimeLord_Кылосов\obj\Debug\MainWindow.g.cs
+C:\Users\matve\Desktop\Учеба\МДК 01.01\TimeLord_Кылосов\obj\Debug\Pages\Stopwatch.g.cs
+C:\Users\matve\Desktop\Учеба\МДК 01.01\TimeLord_Кылосов\obj\Debug\App.g.cs
+C:\Users\matve\Desktop\Учеба\МДК 01.01\TimeLord_Кылосов\obj\Debug\TimeLord_Кылосов_MarkupCompile.cache
+C:\Users\matve\Desktop\Учеба\МДК 01.01\TimeLord_Кылосов\obj\Debug\TimeLord_Кылосов_MarkupCompile.lref
+C:\Users\matve\Desktop\Учеба\МДК 01.01\TimeLord_Кылосов\obj\Debug\MainWindow.baml
+C:\Users\matve\Desktop\Учеба\МДК 01.01\TimeLord_Кылосов\obj\Debug\Pages\Stopwatch.baml
+C:\Users\matve\Desktop\Учеба\МДК 01.01\TimeLord_Кылосов\obj\Debug\TimeLord_Кылосов.g.resources
+C:\Users\matve\Desktop\Учеба\МДК 01.01\TimeLord_Кылосов\obj\Debug\TimeLord_Кылосов.Properties.Resources.resources
+C:\Users\matve\Desktop\Учеба\МДК 01.01\TimeLord_Кылосов\obj\Debug\TimeLord_Кылосов.csproj.GenerateResource.cache
+C:\Users\matve\Desktop\Учеба\МДК 01.01\TimeLord_Кылосов\obj\Debug\TimeLord_Кылосов.csproj.CoreCompileInputs.cache
+C:\Users\matve\Desktop\Учеба\МДК 01.01\TimeLord_Кылосов\obj\Debug\TimeLord_Кылосов.exe
+C:\Users\matve\Desktop\Учеба\МДК 01.01\TimeLord_Кылосов\obj\Debug\TimeLord_Кылосов.pdb
