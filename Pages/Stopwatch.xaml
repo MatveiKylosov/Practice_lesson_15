@@ -13,6 +13,7 @@
                Margin="299, 95, 299, 242.6" Foreground="White" FontSize="48"/>
         <Button x:Name="start" Click="StartStopwatch" Content="Начать" HorizontalAlignment="Center"
                 VerticalAlignment="Center" Margin="280, 312, 402.4, 72.6" Width="100" Height="25" Background="White" Foreground="#FFE8E100"/>
-        <Button Content="Интервал" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="410, 312, 272, 72.6" Width="100" Height="25" Background="White" Foreground="#ffe8e100"/>
+        <Button Content="Интервал" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="410, 312, 272, 72.6" Width="100" Height="25" Background="White" Foreground="#ffe8e100" Click="Button_Click"/>
+        <ListView x:Name="CheckView" Margin="0,10,0,10" HorizontalAlignment="Left" Width="204"/>
     </Grid>
 </Page>

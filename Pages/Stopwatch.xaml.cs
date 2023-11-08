@@ -24,6 +24,7 @@ namespace TimeLord_Кылосов.Pages
         public DispatcherTimer dispatcherTimer = new DispatcherTimer();
         public float full_second = 0;
         public bool start_stopwatch = false;
+        public int crug = 0;
         public Stopwatch()
         {
             InitializeComponent();
@@ -55,6 +56,8 @@ namespace TimeLord_Кылосов.Pages
         {
             if(start_stopwatch == false)
             {
+                CheckView.Items.Clear();
+                crug = 0;
                 full_second = 0;
                 dispatcherTimer.Start();
                 start_stopwatch = true;
@@ -66,6 +69,12 @@ namespace TimeLord_Кылосов.Pages
                 start_stopwatch = false;
                 start.Content = "Начать";
             }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            crug++;
+            CheckView.Items.Add($"Круг - {crug}, время {time.Content}");
         }
     }
 }
