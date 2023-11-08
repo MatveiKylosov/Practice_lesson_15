@@ -5,10 +5,14 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:TimeLord_Кылосов.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="450" d:DesignWidth="782"
       Title="Stopwatch">
 
-    <Grid>
-        
+    <Grid Background="#FFE8E100">
+        <Label x:Name="time" Content="00:00:00" HorizontalAlignment="Center" VerticalAlignment="Center" 
+               Margin="299, 95, 299, 242.6" Foreground="White" FontSize="48"/>
+        <Button x:Name="start" Click="StartStopwatch" Content="Начать" HorizontalAlignment="Center"
+                VerticalAlignment="Center" Margin="280, 312, 402.4, 72.6" Width="100" Height="25" Background="White" Foreground="#FFE8E100"/>
+        <Button Content="Интервал" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="410, 312, 272, 72.6" Width="100" Height="25" Background="White" Foreground="#ffe8e100"/>
     </Grid>
 </Page>
