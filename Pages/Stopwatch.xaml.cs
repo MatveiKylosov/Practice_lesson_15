@@ -28,7 +28,7 @@ namespace TimeLord_Кылосов.Pages
         {
             InitializeComponent();
 
-            dispatcherTimer.Tick += TimerSecond;
+            dispatcherTimer.Tick += TimerSecond; 
             dispatcherTimer.Interval = new TimeSpan(0, 0, 1);
         }
 
