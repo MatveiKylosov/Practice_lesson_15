@@ -71,10 +71,17 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\TimerRjomba.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Pages\Stopwatch.xaml.cs">
       <DependentUpon>Stopwatch.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\TimerRjomba.xaml.cs">
+      <DependentUpon>TimerRjomba.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

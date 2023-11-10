@@ -15,3 +15,5 @@ C:\Users\matve\Desktop\Учеба\МДК 01.01\TimeLord_Кылосов\obj\Debug
 C:\Users\matve\Desktop\Учеба\МДК 01.01\TimeLord_Кылосов\obj\Debug\TimeLord_Кылосов.csproj.CoreCompileInputs.cache
 C:\Users\matve\Desktop\Учеба\МДК 01.01\TimeLord_Кылосов\obj\Debug\TimeLord_Кылосов.exe
 C:\Users\matve\Desktop\Учеба\МДК 01.01\TimeLord_Кылосов\obj\Debug\TimeLord_Кылосов.pdb
+C:\Users\matve\Desktop\Учеба\МДК 01.01\TimeLord_Кылосов\obj\Debug\Pages\TimerRjomba.g.cs
+C:\Users\matve\Desktop\Учеба\МДК 01.01\TimeLord_Кылосов\obj\Debug\Pages\TimerRjomba.baml

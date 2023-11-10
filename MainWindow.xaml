@@ -8,5 +8,6 @@
         Title="MainWindow" Height="450" Width="800" MinHeight="450" MinWidth="800">
     <Grid>
         <Frame x:Name="frame" NavigationUIVisibility="Hidden"/>
+        <Button x:Name="Change" Margin="698,10,0,0" Height="31" VerticalAlignment="Top" HorizontalAlignment="Left" Width="79" Click="Button_Click">Таймер</Button>
     </Grid>
 </Window>
