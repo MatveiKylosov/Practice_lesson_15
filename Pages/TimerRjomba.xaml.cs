@@ -60,9 +60,9 @@ namespace TimeLord_Кылосов.Pages
 
         private void StartStopTimer(object sender, RoutedEventArgs e)
         {
-            if(int.TryParse(TimerTime.Text, out int seconds) & BTT.Content.ToString() == "Старт")
+            if(float.TryParse(TimerTime.Text, out full_second) & BTT.Content.ToString() == "Старт")
             {
-                full_second = 1+ seconds;
+                full_second++;
                 dispatcherTimer.Start();
             }
             else dispatcherTimer.Stop();
