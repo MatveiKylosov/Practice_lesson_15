@@ -60,14 +60,22 @@ namespace TimeLord_Кылосов.Pages
 
         private void StartStopTimer(object sender, RoutedEventArgs e)
         {
-            if(float.TryParse(TimerTime.Text, out full_second) & BTT.Content.ToString() == "Старт")
+            int[] time = new int[3];
+            if (BTT.Content.ToString() == "Старт" & 
+                int.TryParse(TimerTime.Text.Split(':')[0], out time[0]) &
+                int.TryParse(TimerTime.Text.Split(':')[1], out time[1]) &
+                int.TryParse(TimerTime.Text.Split(':')[2], out time[2]))
             {
-                full_second++;
-                dispatcherTimer.Start();
-            }
-            else dispatcherTimer.Stop();
+                full_second = time[2] + time[1] * 60 + time[0] * 60 * 60 + 1;
 
-            BTT.Content = $"{(BTT.Content.ToString() == "Старт" ? "Стоп" : "Старт")}";
+                dispatcherTimer.Start();
+                BTT.Content = $"Стоп";
+            }
+            else if (BTT.Content.ToString() == "Стоп")
+            {
+                BTT.Content = $"Старт";
+                dispatcherTimer.Stop();
+            }
         }
     }
 }
