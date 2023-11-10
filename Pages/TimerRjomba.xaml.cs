@@ -34,8 +34,6 @@ namespace TimeLord_Кылосов.Pages
 
         private void TimerSecond(object sender, EventArgs e)
         {
-            full_second--;
-
             float hours = (int)(full_second / 60 / 60);
             float minuts = (int)(full_second / 60) - (hours * 60);
             float seconds = full_second - (hours * 60 * 60) - (minuts * 60);
@@ -50,6 +48,8 @@ namespace TimeLord_Кылосов.Pages
             if (hours < 0) s_hours = "0" + hours;
 
             time.Content = s_hours + ":" + s_minuts + ":" + s_seconds;
+
+            full_second--;
             if (full_second == 0)
             {
                 dispatcherTimer.Stop();
